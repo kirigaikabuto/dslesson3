@@ -3,17 +3,19 @@
 # -1
 # -3
 # 3
-# 4
+# 4 
+#find max
 n = int(input())
 arr=[]
 for i in range(n):
     num = int(input())
     arr.append(num)
 maxi=arr[0]
-for i in arr:
-    if i > maxi:
-        maxi = i
+for i in range(n):
+    if arr[i] > maxi:
+        maxi = arr[i]
 print(f"Maxi={maxi}")
+
 #1 i = 1 maxi =1 
 #  if 1>1:
 #     maxi =1
