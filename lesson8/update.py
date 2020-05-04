@@ -7,10 +7,10 @@ file.close()
 #2)
 users = json.loads(data)
 #3)update
-condition_key="username"
-condition_value="user1"
-key = "age"
-value = 100
+condition_key=input("find key")
+condition_value=input("find value")
+key = input("replace key")
+value = input("replace value")
 for i in range(len(users)):
     if users[i][condition_key] == condition_value:
         users[i][key]=value
