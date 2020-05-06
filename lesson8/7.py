@@ -1,6 +1,4 @@
-#find max
-#find min
-#even odd
+#1 2 3 4 5 6 
 def getAvg(arr):
     sumi=0
     n = len(arr)
