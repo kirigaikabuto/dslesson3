@@ -1,9 +1,11 @@
-# INPUT:
-3
-1,yerassyl,5 4 3 5 4
-2,era,5 4 3
-3,zhina,1 2 3 4
-# OUT:
-yerassyl 4.2
-era ...
-zhina ...
+arr=[100,2300,20]
+sumi=0
+n = len(arr)
+# range(n)->range(3) -> 0 1 2 -> 0 + 1 +2
+for i in range(n):
+    sumi = sumi + arr[i]
+print(sumi)
+sumi = 0
+for i in arr:
+    sumi = sumi + i
+print(sumi)
