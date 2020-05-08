@@ -2,8 +2,9 @@
 # yerassyl,4 5 3 4 2
 # kirito,3 4 5
 # anel,4 5 3 2 4 3 4
-# 1
-# zhina,2 5 5 
+# 2
+# zhina,2 5 5
+# zhina2,1 1 1
 n = int(input())#3
 arr=[]
 for i in range(n):
@@ -56,7 +57,11 @@ for i in newelements:
         sumi = sumi + j
     avg = sumi/n_marks
     i['avg']=avg
-
+for i in newelements:
+    if i['avg']>=mini_avg and i['avg']<=maxi_avg:
+        print(i['name'],"YES")
+    else:
+        print(i['name'],"NO")
 #yerassyl 3.6
 # kirito 4.0
 # anel 3.5714285714285716
