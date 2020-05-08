@@ -14,8 +14,8 @@ for i in range(n):
     d['name']=name
     d['marks']=marks
     arr.append(d)
-
-
+    
+#calculate avg
 for i in arr:
     name = i['name']
     marks = i['marks']
@@ -24,24 +24,60 @@ for i in arr:
     for j in marks:
         sumi = sumi + j
     avg = sumi/n_marks
-    print(name,avg)
+    i['avg']=avg
+    #end
+    
 #find max min
-for i in 
+maxi_avg=arr[0]['avg']
+mini_avg=arr[0]['avg']
+for i in arr:
+    if maxi_avg<i['avg']:
+        maxi_avg = i['avg']
+    if mini_avg>i['avg']:
+        mini_avg = i['avg']
+
+#add new element
+m = int(input())
+newelements=[]
+for i in range(m):
+    line = input().split(",")
+    name = line[0]
+    marks = [int(i) for i in line[1].split(" ")]
+    d={}
+    d['name']=name
+    d['marks']=marks
+    newelements.append(d)
+for i in newelements:
+    name = i['name']
+    marks = i['marks']
+    sumi=0
+    n_marks = len(marks)
+    for j in marks:
+        sumi = sumi + j
+    avg = sumi/n_marks
+    i['avg']=avg
+
 #yerassyl 3.6
 # kirito 4.0
 # anel 3.5714285714285716
 # arr=[
 #     {
 #         "name":"",
-#         "marks":[1,2,3,4,5]
+#         "marks":[1,2,3,4,5],
+ #         "avg":3.6
 #     },
 #      {
 #         "name":"",
 #         "marks":[1,2,3,4,5]
+#         "avg":3.6
 #     },
 #      {
 #         "name":"",
 #         "marks":[1,2,3,4,5]
+#         "avg":3.6
 #     },
+# {
+#     "avg":3.6
+# }
 # ]
     
