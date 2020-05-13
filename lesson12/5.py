@@ -16,11 +16,13 @@ arr=[
         "marks":[1,2,3,4,5]
     }
 ]
-#code
+find_key=""
+find_value=
+update_key=
+update_value=
+arr = set_data_to_dict(arr,find_key,find_value,update_key,update_value)
 for i in arr:
-    marks = i['marks']
-    maxi = find_max(marks)
-    print(i['name'],marks)
-#yerassyl1 5
-#yerassyl2 5
-#yerassyl3 5
+    print(i)
+# def set_data_to_dict(arr,find_key,find_value,update_key,update_value):
+#     #code 
+#     return arr
