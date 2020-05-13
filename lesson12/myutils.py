@@ -22,11 +22,11 @@ def ifexists(arr,find):
             
     return is_find
 
-def count_symbol(name,s):
+def count_symbol(name,symbol):
     count=0
     for i in name:
         
-        if i == s:
+        if i == symbol:
             count+=1
-        print(i,s,count)
+        print(i,symbol,count)
     return count
