@@ -1,0 +1,3 @@
+inarray=[int(i) for i in input("Управляющие акимы-->").split()]
+print("Текущие акимы: ", inarray)
+k=int(input("Количество заявок на замену акимов-->")) replacements=[] for i in range(k):     tmp={}     rpl=input("Старый аким, новый аким через пробел-->").split()     tmp["Сместить"]=rpl[0]     tmp["Назначить"]=rpl[1]     replacements.append(tmp)          print("Замещаемые акимы    Новые акимы")     for i in range(k):         print(replacements[i]["Сместить"],"          ", replacements[i]["Назначить"])  for x in range(len(replacements)):     for y in inarray:         if y == replacements[x]["Сместить"]:             y=replacements[i]["Назначить"]             print("Делаю замену") print(inarray) 
