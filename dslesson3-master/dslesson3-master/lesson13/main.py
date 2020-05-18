@@ -2,21 +2,27 @@
 # Дом - объект,object,reference,ссылка
 class Home:
     #constructor конструктор -> создают свойства
-    def __init__(self,a,b,c):
-        self.address = a
-        self.width= b
-        self.height= c
+    def __init__(self,address,width,height):
+        self.address = address
+        self.width= width
+        self.height= height
+    #method
+    def print_info(self):
+        print(self.address,self.width,self.height)
 
+    def getArea(self):
+        s = self.width * self.height
+        return s
 # 1 класс но может быть много объектов
 #home1 -> object
 #Home() -> создание класса
 print("HOME1")
 home1 = Home("address1",100,200)
-print(home1.address)
-print(home1.width)
-print(home1.height)
+home1.print_info()
+area1 = home1.getArea()
+print(area1)
 print("HOME2")
 home2 = Home("address2",300,400)
-print(home2.address)
-print(home2.width)
-print(home2.height)
+home2.print_info()
+area2 = home2.getArea()
+print(area2)
